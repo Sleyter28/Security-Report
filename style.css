@@ -7,3 +7,7 @@ html,
     h5 {
         font-family: "Raleway", sans-serif
     }
+
+nav{
+    border: 1px, black;
+}
