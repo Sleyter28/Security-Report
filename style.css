@@ -18,7 +18,6 @@ input[type=text] {
     border-radius: 4px;
     font-size: 13px;
     background-color: white;
-    
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
@@ -30,4 +29,15 @@ input[type=text]:focus {
 }
 #search01{
     background-image: url('images/search-icon-62943.png');
+}
+a{
+    text-decoration: none;
+}
+#search02{
+    background-image: url('images/search-icon-62943.png');
+    border: 2px solid green;
+}
+#search03{
+    background-image: url('images/search-icon-62943.png');
+    border: 2px solid lightblue;
 }
