@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <title>Security Report</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
+<title>Security Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
 
 <body class="w3-light-grey">
 
     <!-- Top container -->
-    <div class="w3-container w3-top w3-black w3-large w3-padding w3-border-top w3-border-black" style="z-index:4">
+    <div class="w3-container w3-top w3-vivid-purplish-blue w3-large w3-padding w3-border-top w3-border-black" style="z-index:4">
         <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-        <span class="w3-right"><img src="/images/images.jpeg"  style="width:35px"></span>
+        <span class="w3-right"><img src="/images/cctv_camera-512.png"  style="width:35px"></span>
     </div>
 
     <!-- Sidenav/menu -->
-    
+
     <nav class="w3-sidenav w3-collapse w3-vivid-blue w3-theme-l4 w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
         <br>
         <div class="w3-container w3-row">
@@ -33,15 +33,13 @@
             </div>
         </div>
         <hr>
-        <div class="w3-container" w3-border-right w3-border-black>
+        <div class="w3-container w3-border-right w3-border-black">
             <h5>Dashboard</h5>
         </div>
         <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
         <a href="Security_Report.html" class="w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
-        <a href="views.html" class="w3-padding w3-pale-blue"><i class="fa fa-eye fa-fw"></i>  Views</a>
-        <a href="News.html" class="w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
-        <a href="#" class="w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-        <a href="#" class="w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+        <a href="History.html" class="w3-padding w3-pale-blue"><i class="fa fa-history fa-fw"></i>  History</a>
+        <a href="Settings.html" class="w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
         <br>
         <br>
     </nav>
@@ -55,21 +53,47 @@
 
         <!-- Header -->
         <header class="w3-container" style="padding-top:22px">
-            <h5><b><i class="fa fa-eye"></i> Views</b></h5>
+            <h5><b><i class="fa fa-history"></i> History</b></h5>
         </header>
-
-        <div class="w3-row-padding w3-margin-bottom">
-            
+        <div class="w3-container w3-section">
+            <table class="w3-table-all">
+                <thead>
+                    <tr class="w3-blue">
+                        <th>Action</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tr class="w3-hover-black">
+                    <td>Share</td>
+                    <td>You shared a fault</td>
+                    <td>04/11/2016</td>
+                </tr>
+                <tr class="w3-hover-black">
+                    <td>View</td>
+                    <td>You saw the news</td>
+                    <td>03/11/2016</td>
+                </tr>
+                <tr class="w3-hover-black">
+                    <td>Share</td>
+                    <td>You shared a fault</td>
+                    <td>03/11/2016</td>
+                </tr>
+                <tr class="w3-hover-black">
+                    <td>Create</td>
+                    <td>Your account was created</td>
+                    <td>02/11/2016</td>
+                </tr>
+            </table>
         </div>
-
         <hr>
         <br>
-        
-        
+
+
 
         <!-- Footer -->
         <footer class="w3-container w3-padding-16 w3-light-grey">
-<!--
+            <!--
             <h4>FOOTER</h4>
             <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 -->
@@ -101,6 +125,7 @@
             mySidenav.style.display = "none";
             overlayBg.style.display = "none";
         }
+
     </script>
 
 </body>
