@@ -41,3 +41,7 @@ a{
     background-image: url('images/search-icon-62943.png');
     border: 2px solid lightblue;
 }
+#fullName{
+    width: 250;
+    border: 2px solid lightblue;
+}
