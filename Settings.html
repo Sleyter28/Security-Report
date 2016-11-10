@@ -229,6 +229,94 @@
                                 </table>
                             </div>
                         </div>
+                        <a class="w3-btn w3-right w3-red " onclick="document.getElementById('id02').style.display='block'" style="margin-top:5px;">New Security Service <i class="fa fa-plus-square"></i></a>
+                        <a class="w3-btn w3-right w3-red " onclick="document.getElementById('id03').style.display='block'" style="margin-top:5px;">New Cabling Service <i class="fa fa-plus-square"></i></a>
+                    </div>
+
+                            <!--Modal New Report-->
+                    <div id="id02" class="w3-modal" style="z-index:4">
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <div class="w3-container w3-padding w3-red">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+                                <h2>Security Service</h2>
+                            </div>
+                            <div class="w3-container">
+                                <form class="w3-container">
+                                    <p>
+                                        <h2>Plan</h2>
+                                    </p>
+                                    <p>
+                                    <div class="w3-panel w3-light-gray w3-round-large">
+                                        <input class="w3-radio" type="radio" name="gender" value="alto" checked>
+                                        <label class="w3-validate">Basico $30</label>
+                                        <p></p>
+                                        <label class="w3-validate">Se notifica y se envia un motorizado en el caso que se dispare la alarma del cliente</label>
+                                    </p>
+                                    <p>
+                                        <input class="w3-radio" type="radio" name="gender" value="medio">
+                                        <label class="w3-validate">Medio $60</label>
+                                        <p></p>
+                                        <label class="w3-validate">Se realizan rondas (rutas) cada cierto periodo de tiempo haciendo una vigilancia visual adicional, al local u hogar del cliente</label>
+                                    </p>
+                                    <p>
+                                        <input class="w3-radio" type="radio" name="gender" value="baja">
+                                        <label class="w3-validate">Avanzado $80</label>
+                                        <p></p>
+                                        <label class="w3-validate">Se destaca un oficial de seguridad en el sitio, el cual es visitado varias veces al dia como parte de la ronda</label>
+                                    </p>
+                                    </div>
+                                </form>
+                                    <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='none'">Buy <i class="fa fa-paper-plane"></i></a>
+                                    <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal New Report-->
+                    <div id="id03" class="w3-modal" style="z-index:4">
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <div class="w3-container w3-padding w3-red">
+                                <span onclick="document.getElementById('id03').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+                                <h2>Cabling Service</h2>
+                            </div>
+                            <div class="w3-container">
+                                <form class="w3-container">
+                                    <p>
+                                        <h2>Plan</h2>
+                                    </p>
+                                    <p>
+                                    <div class="w3-panel w3-light-gray w3-round-large">
+                                        <input class="w3-check" type="checkbox">
+                                        <label class="w3-validate">Digital Cable</label>
+                                    </p>
+                                    <p>
+                                        <input class="w3-check" type="checkbox">
+                                        <label class="w3-validate">Internet</label>
+                                    </p>
+                                    <p>
+                                        <input class="w3-check" type="checkbox">
+                                        <label class="w3-validate">Data Network </label>
+                                    </p>
+                                    </div>
+
+                                    <div class="w3-panel w3-light-gray w3-round-large">
+                                        <input class="w3-radio" type="radio" name="gender" value="alto" checked>
+                                        <label class="w3-validate">Plan Reducido $Soon</label>
+                                    </p>
+                                    <p>
+                                        <input class="w3-radio" type="radio" name="gender" value="medio">
+                                        <label class="w3-validate">Plan Basico $Soon</label>
+                                    </p>
+                                    <p>
+                                        <input class="w3-radio" type="radio" name="gender" value="baja">
+                                        <label class="w3-validate">Plan Premium $Soon</label>
+                                    </p>
+                                    </div>
+                                </form>
+                                <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='none'">Buy <i class="fa fa-paper-plane"></i></a>
+                                <hr>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="Tokyo" class="w3-container city">
