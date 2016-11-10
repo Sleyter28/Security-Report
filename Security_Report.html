@@ -1,259 +1,260 @@
 <!DOCTYPE html>
 <html>
-<title>Security Report</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
+    <title>Security Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
+    <link rel="icon" href="images/cctv_camera-512.ico">
 
-<body class="w3-light-grey">
+    <body class="w3-light-grey">
 
-    <!-- Top container -->
-    <div class="w3-container w3-top w3-vivid-purplish-blue w3-large w3-padding w3-border-top w3-border-black" style="z-index:4">
-        <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-        <span class="w3-right"><img src="/images/cctv_camera-512.png"  style="width:35px"></span>
-    </div>
-
-    <!-- Sidenav/menu -->
-
-    <nav class="w3-sidenav w3-collapse w3-vivid-blue w3-theme-l4 w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
-        <br>
-        <div class="w3-container w3-row">
-            <div class="w3-col s4">
-                <img src="/images/img_avatar2%20(1).png" class="w3-circle w3-margin-right" style="width:56px">
-            </div>
-            <div class="w3-col s8">
-                <span>Welcome, <strong>Theo</strong></span>
-                <br>
-                <a href="#" class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i class="fa fa-envelope"></i></a>
-                <a href="#" class="w3-hover-none w3-hover-text-green w3-show-inline-block"><i class="fa fa-user"></i></a>
-                <a href="#" class="w3-hover-none w3-hover-text-blue w3-show-inline-block"><i class="fa fa-cog"></i></a>
-            </div>
-        </div>
-        <hr>
-        <div class="w3-container" w3-border-right w3-border-black>
-            <h5>Dashboard</h5>
-        </div>
-        <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-        <a href="Security_Report.html" class="w3-padding w3-pale-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
-        <a href="History.html" class="w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-        <a href="Settings.html" class="w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
-        <br>
-        <br>
-    </nav>
-
-
-    <!-- Overlay effect when opening sidenav on small screens -->
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
-
-        <!-- Header -->
-        <header class="w3-container" style="padding-top:22px">
-            <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
-        </header>
-
-        <div class="w3-row-padding w3-margin-bottom">
-
-            <div class="w3-quarter">
-                <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='block'">
-                    <div class="w3-container w3-red w3-padding-16">
-                        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
-                        <div class="w3-right">
-                            <h3>52</h3>
-                        </div>
-                        <div class="w3-clear"></div>
-                        <h4>Reports</h4>
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-quarter">
-                <a href="javascript:void(0)" onclick="document.getElementById('id05').style.display='block'">
-                    <div class="w3-container w3-blue w3-padding-16">
-                        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
-                        <div class="w3-right">
-                            <h3>99</h3>
-                        </div>
-                        <div class="w3-clear"></div>
-                        <h4>Views</h4>
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-quarter">
-                <a href="javascript:void(0)" onclick="document.getElementById('id04').style.display='block'">
-                    <div class="w3-container w3-green w3-padding-16">
-                        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
-                        <div class="w3-right">
-                            <h3>23</h3>
-                        </div>
-                        <div class="w3-clear"></div>
-                        <h4>Shares</h4>
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-quarter">
-                <a href="javascript:void(0)" onclick="document.getElementById('id03').style.display='block'">
-                    <div class="w3-container w3-amber w3-text-white w3-padding-16">
-                        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
-                        <div class="w3-right">
-                            <h3>50</h3>
-                        </div>
-                        <div class="w3-clear"></div>
-                        <h4>Users</h4>
-                    </div>
-                </a>
-            </div>
-
+        <!-- Top container -->
+        <div class="w3-container w3-top w3-vivid-purplish-blue w3-large w3-padding w3-border-top w3-border-black" style="z-index:4">
+            <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+            <span class="w3-right"><img src="/images/cctv_camera-512.png"  style="width:35px"></span>
         </div>
 
-        <div class="w3-container w3-section">
-            <div class="w3-row-padding" style="margin-left:20px">
-                <div class="w3-thirdthird">
-                    <h5>News</h5>
-                    <table class="w3-table w3-striped w3-white">
-                        <tr>
-                            <td><i class="fa fa-automobile w3-blue w3-padding-tiny"></i></td>
-                            <td>Space cars available.</td>
-                            <td><i>10 mins</i></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa fa-gamepad w3-red w3-padding-tiny"></i></td>
-                            <td>New place for children</td>
-                            <td><i>15 mins</i></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa fa-users w3-green w3-text-white w3-padding-tiny"></i></td>
-                            <td>New family at home, over 3 users.</td>
-                            <td><i>17 mins</i></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa fa-bus w3-amber w3-padding-tiny"></i></td>
-                            <td>New bus station.</td>
-                            <td><i>25 mins</i></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa fa-wheelchair w3-deep-purple w3-padding-tiny"></i></td>
-                            <td>New Pedestrian crossing available</td>
-                            <td><i>28 mins</i></td>
-                        </tr>
+        <!-- Sidenav/menu -->
 
-                    </table>
+        <nav class="w3-sidenav w3-collapse w3-vivid-blue w3-theme-l4 w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
+            <br>
+            <div class="w3-container w3-row">
+                <div class="w3-col s4">
+                    <img src="/images/img_avatar2%20(1).png" class="w3-circle w3-margin-right" style="width:56px">
+                </div>
+                <div class="w3-col s8">
+                    <span>Welcome, <strong>Theo</strong></span>
+                    <br>
+                    <a href="#" class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i class="fa fa-envelope"></i></a>
+                    <a href="#" class="w3-hover-none w3-hover-text-green w3-show-inline-block"><i class="fa fa-user"></i></a>
+                    <a href="#" class="w3-hover-none w3-hover-text-blue w3-show-inline-block"><i class="fa fa-cog"></i></a>
                 </div>
             </div>
-        </div>
+            <hr>
+            <div class="w3-container" w3-border-right w3-border-black>
+                <h5>Dashboard</h5>
+            </div>
+            <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <a href="Security_Report.html" class="w3-padding w3-pale-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
+            <a href="History.html" class="w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+            <a href="Settings.html" class="w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+            <br>
+            <br>
+        </nav>
 
 
+        <!-- Overlay effect when opening sidenav on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-        <div class="w3-container w3-dark-grey w3-padding-32">
-            <div class="w3-row">
-                <div class="w3-container w3-third" style="margin-left:100px;">
-                    <h5 class="w3-bottombar w3-border-red">System</h5>
-                    <p>Browser</p>
-                    <p>OS</p>
-                    <p>More</p>
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+            <!-- Header -->
+            <header class="w3-container" style="padding-top:22px">
+                <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+            </header>
+
+            <div class="w3-row-padding w3-margin-bottom">
+
+                <div class="w3-quarter">
+                    <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='block'">
+                        <div class="w3-container w3-red w3-padding-16">
+                            <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+                            <div class="w3-right">
+                                <h3>52</h3>
+                            </div>
+                            <div class="w3-clear"></div>
+                            <h4>Reports</h4>
+                        </div>
+                    </a>
                 </div>
-                <div class="w3-container w3-third" style="margin-left:100px;">
-                    <h5 class="w3-bottombar w3-border-orange">Target</h5>
-                    <p>Users</p>
+
+                <div class="w3-quarter">
+                    <a href="javascript:void(0)" onclick="document.getElementById('id05').style.display='block'">
+                        <div class="w3-container w3-blue w3-padding-16">
+                            <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+                            <div class="w3-right">
+                                <h3>99</h3>
+                            </div>
+                            <div class="w3-clear"></div>
+                            <h4>Views</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-quarter">
+                    <a href="javascript:void(0)" onclick="document.getElementById('id04').style.display='block'">
+                        <div class="w3-container w3-green w3-padding-16">
+                            <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+                            <div class="w3-right">
+                                <h3>23</h3>
+                            </div>
+                            <div class="w3-clear"></div>
+                            <h4>Shares</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-quarter">
+                    <a href="javascript:void(0)" onclick="document.getElementById('id03').style.display='block'">
+                        <div class="w3-container w3-amber w3-text-white w3-padding-16">
+                            <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                            <div class="w3-right">
+                                <h3>50</h3>
+                            </div>
+                            <div class="w3-clear"></div>
+                            <h4>Users</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="w3-container w3-section">
+                <div class="w3-row-padding" style="margin-left:20px">
+                    <div class="w3-thirdthird">
+                        <h5>News</h5>
+                        <table class="w3-table w3-striped w3-white">
+                            <tr>
+                                <td><i class="fa fa-automobile w3-blue w3-padding-tiny"></i></td>
+                                <td>Space cars available.</td>
+                                <td><i>10 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-gamepad w3-red w3-padding-tiny"></i></td>
+                                <td>New place for children</td>
+                                <td><i>15 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-users w3-green w3-text-white w3-padding-tiny"></i></td>
+                                <td>New family at home, over 3 users.</td>
+                                <td><i>17 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-bus w3-amber w3-padding-tiny"></i></td>
+                                <td>New bus station.</td>
+                                <td><i>25 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-wheelchair w3-deep-purple w3-padding-tiny"></i></td>
+                                <td>New Pedestrian crossing available</td>
+                                <td><i>28 mins</i></td>
+                            </tr>
+
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!--Modal to view reports-->
-        <!-- Modal that pops up when you click on "New Message" -->
-        <div id="id01" class="w3-modal" style="z-index:4">
-            <div class="w3-modal-content w3-animate-zoom">
-                <div class="w3-container w3-padding w3-red">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
-                    <h2>Reports</h2>
+
+
+            <div class="w3-container w3-dark-grey w3-padding-32">
+                <div class="w3-row">
+                    <div class="w3-container w3-third" style="margin-left:100px;">
+                        <h5 class="w3-bottombar w3-border-red">System</h5>
+                        <p>Browser</p>
+                        <p>OS</p>
+                        <p>More</p>
+                    </div>
+                    <div class="w3-container w3-third" style="margin-left:100px;">
+                        <h5 class="w3-bottombar w3-border-orange">Target</h5>
+                        <p>Users</p>
+                    </div>
                 </div>
-                <div class="w3-container">
-                    <form class="w3-container">
-                        <div class="w3-row-padding w3-margin-bottom">
+            </div>
+
+            <!--Modal to view reports-->
+            <!-- Modal that pops up when you click on "New Message" -->
+            <div id="id01" class="w3-modal" style="z-index:4">
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-padding w3-red">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+                        <h2>Reports</h2>
+                    </div>
+                    <div class="w3-container">
+                        <form class="w3-container">
+                            <div class="w3-row-padding w3-margin-bottom">
+                                <p>
+                                    <input type="text" id="search01" name="search" placeholder="Search..">
+                                    <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='block'" style="margin-top:5px;">New  <i class="fa fa-plus-square"></i></a>
+                                </p>
+                                <ul class="w3-ul w3-card-4">
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Conexión WiFi</span>
+                                        <br>
+                                        <span>Tipo: Telecomunicaciones</span>
+                                        <span>Prioridad: Media</span>
+                                        <span>Fecha: 04/11/2016</span>
+                                        <span>Asignado: John Smith</span>
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/water1.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Tubería rota</span>
+                                        <br>
+                                        <span>Tipo: Acueductos</span>
+                                        <span>Prioridad: Alta</span>
+                                        <span>Fecha: 01/11/2016</span>
+                                        <span>Asignado: Sean Odonnell</span>
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/el_icon_4.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Bombillo quemado</span>
+                                        <br>
+                                        <span>Tipo: Eléctrico</span>
+                                        <span>Prioridad: Media</span>
+                                        <span>Fecha: 03/11/2016</span>
+                                        <span>Asignado: Mario Palma</span>
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
+                                        <br>
+                                        <span>Tipo: Orgánico</span>
+                                        <span>Prioridad: Baja</span>
+                                        <span>Fecha: 06/11/2016</span>
+                                        <span>Asignado: Steve Kellie</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal New Report-->
+            <div id="id02" class="w3-modal" style="z-index:4">
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-padding w3-red">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+                        <h2>New Report</h2>
+                    </div>
+                    <div class="w3-container">
+                        <form class="w3-container">
                             <p>
-                                <input type="text" id="search01" name="search" placeholder="Search..">
-                                <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='block'" style="margin-top:5px;">New  <i class="fa fa-plus-square"></i></a>
+                                <label>Nombre de Avería</label>
+                                <input class="w3-input w3-border w3-hover-border-black" type="text" style="height:30px">
                             </p>
-                            <ul class="w3-ul w3-card-4">
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Conexión WiFi</span>
-                                    <br>
-                                    <span>Tipo: Telecomunicaciones</span>
-                                    <span>Prioridad: Media</span>
-                                    <span>Fecha: 04/11/2016</span>
-                                    <span>Asignado: John Smith</span>
-                                </li>
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/water1.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Tubería rota</span>
-                                    <br>
-                                    <span>Tipo: Acueductos</span>
-                                    <span>Prioridad: Alta</span>
-                                    <span>Fecha: 01/11/2016</span>
-                                    <span>Asignado: Sean Odonnell</span>
-                                </li>
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/el_icon_4.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Bombillo quemado</span>
-                                    <br>
-                                    <span>Tipo: Eléctrico</span>
-                                    <span>Prioridad: Media</span>
-                                    <span>Fecha: 03/11/2016</span>
-                                    <span>Asignado: Mario Palma</span>
-                                </li>
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
-                                    <br>
-                                    <span>Tipo: Orgánico</span>
-                                    <span>Prioridad: Baja</span>
-                                    <span>Fecha: 06/11/2016</span>
-                                    <span>Asignado: Steve Kellie</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
 
-        <!--Modal New Report-->
-        <div id="id02" class="w3-modal" style="z-index:4">
-            <div class="w3-modal-content w3-animate-zoom">
-                <div class="w3-container w3-padding w3-red">
-                    <span onclick="document.getElementById('id02').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
-                    <h2>New Report</h2>
-                </div>
-                <div class="w3-container">
-                    <form class="w3-container">
-                        <p>
-                            <label>Nombre de Avería</label>
-                            <input class="w3-input w3-border w3-hover-border-black" type="text" style="height:30px">
-                        </p>
+                            <p>
+                                <label>Tipo de Avería</label>
+                                <select class="w3-select w3-border-red">
+                                    <option value="volvo">Conectividad</option>
+                                    <option value="saab">Eléctrica</option>
+                                    <option value="mercedes">Acueductos</option>
+                                    <option value="audi">Orgánico</option>
+                                </select>
+                            </p>
 
-                        <p>
-                            <label>Tipo de Avería</label>
-                            <select class="w3-select w3-border-red">
-                                <option value="volvo">Conectividad</option>
-                                <option value="saab">Eléctrica</option>
-                                <option value="mercedes">Acueductos</option>
-                                <option value="audi">Orgánico</option>
-                            </select>
-                        </p>
-
-                        <p>
-                            <label>Prioridad</label>
+                            <p>
+                                <label>Prioridad</label>
                             <p>
                                 <input class="w3-radio" type="radio" name="gender" value="alto" checked>
                                 <label class="w3-validate">Alta</label>
@@ -271,228 +272,228 @@
                             </p>
                             <br>
                             <br>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!--Modal All users-->
-        <div id="id03" class="w3-modal" style="z-index:4">
-            <div class="w3-modal-content w3-animate-zoom">
-                <div class="w3-container w3-padding w3-amber">
-                    <span onclick="document.getElementById('id03').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
-                    <h2>Users</h2>
-                </div>
-                <br>
-                <div class="w3-container">
-                    <ul class="w3-ul w3-card-4">
-                        <li class="w3-padding-16">
-                            <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                            <img src="images/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                            <span class="w3-xlarge">Allison Argent</span>
-                            <br>
-                            <span>Apartment 14</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                            <img src="images/img_avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                            <span class="w3-xlarge">Scott McCall</span>
-                            <br>
-                            <span>Apartment 16</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                            <img src="images/download.jpeg" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                            <span class="w3-xlarge">Stile Stilinski</span>
-                            <br>
-                            <span>Apartment 1</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                            <img src="images/avatar.svg" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                            <span class="w3-xlarge">Isaac Lahey</span>
-                            <br>
-                            <span>Apartment 5</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                            <img src="images/male3-512.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                            <span class="w3-xlarge">Liam Dunbar</span>
-                            <br>
-                            <span>Apartment 2</span>
-                        </li>
-                    </ul>
+            <!--Modal All users-->
+            <div id="id03" class="w3-modal" style="z-index:4">
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-padding w3-amber">
+                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+                        <h2>Users</h2>
+                    </div>
                     <br>
+                    <div class="w3-container">
+                        <ul class="w3-ul w3-card-4">
+                            <li class="w3-padding-16">
+                                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                <img src="images/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                <span class="w3-xlarge">Allison Argent</span>
+                                <br>
+                                <span>Apartment 14</span>
+                            </li>
+                            <li class="w3-padding-16">
+                                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                <img src="images/img_avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                <span class="w3-xlarge">Scott McCall</span>
+                                <br>
+                                <span>Apartment 16</span>
+                            </li>
+                            <li class="w3-padding-16">
+                                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                <img src="images/download.jpeg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                <span class="w3-xlarge">Stile Stilinski</span>
+                                <br>
+                                <span>Apartment 1</span>
+                            </li>
+                            <li class="w3-padding-16">
+                                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                <img src="images/avatar.svg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                <span class="w3-xlarge">Isaac Lahey</span>
+                                <br>
+                                <span>Apartment 5</span>
+                            </li>
+                            <li class="w3-padding-16">
+                                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                <img src="images/male3-512.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                <span class="w3-xlarge">Liam Dunbar</span>
+                                <br>
+                                <span>Apartment 2</span>
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!--Modal shares-->
-        <div id="id04" class="w3-modal" style="z-index:4">
-            <div class="w3-modal-content w3-animate-zoom">
-                <div class="w3-container w3-padding w3-green">
-                    <span onclick="document.getElementById('id04').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
-                    <h2>Shares</h2>
-                </div>
-                <br>
-                <div class="w3-container">
-                    <form class="w3-container">
-                        <div class="w3-row-padding w3-margin-bottom">
-                            <p>
-                                <input type="text" id="search02" name="search" placeholder="Search..">
-                            </p>
-                            <ul class="w3-ul w3-card-4">
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Conexión WiFi</span>
-                                    <br>
-                                    <span>Compartido con: Allison Argent &amp; Scott McCall</span>
-                                </li>
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
-                                    <br>
-                                    <span>Compartido con: Liam Dunbar &amp; Stile Stillisnki</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
+            <!--Modal shares-->
+            <div id="id04" class="w3-modal" style="z-index:4">
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-padding w3-green">
+                        <span onclick="document.getElementById('id04').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+                        <h2>Shares</h2>
+                    </div>
+                    <br>
+                    <div class="w3-container">
+                        <form class="w3-container">
+                            <div class="w3-row-padding w3-margin-bottom">
+                                <p>
+                                    <input type="text" id="search02" name="search" placeholder="Search..">
+                                </p>
+                                <ul class="w3-ul w3-card-4">
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Conexión WiFi</span>
+                                        <br>
+                                        <span>Compartido con: Allison Argent &amp; Scott McCall</span>
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
+                                        <br>
+                                        <span>Compartido con: Liam Dunbar &amp; Stile Stillisnki</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!--Modal shares-->
-        <div id="id05" class="w3-modal" style="z-index:4">
-            <div class="w3-modal-content w3-animate-zoom">
-                <div class="w3-container w3-padding w3-blue">
-                    <span onclick="document.getElementById('id05').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
-                    <h2>All Views</h2>
-                </div>
-                <br>
-                <div class="w3-container">
-                    <form class="w3-container">
-                        <div class="w3-row-padding w3-margin-bottom">
-                            <p>
-                                <input type="text" id="search03" name="search" placeholder="Search..">
-                            </p>
-                            <ul class="w3-ul w3-card-4">
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Conexión WiFi</span>
-                                    <br>
-                                    <span>Visto por: Isaac Lahey, Liam Dunbar, Allison Argent &amp; 2 más.</span>
-                                </li>
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/water1.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Tubería rota</span>
-                                    <br>
-                                    <span>Visto por: Stili Stillinski, Allison Argent, Isaac Lahey &amp; 6 más.</span>
-                                </li>
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/el_icon_4.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Bombillo quemado</span>
-                                    <br>
-                                    <span>Visto por: Stili Stillinski, Liam Dunbar, Scott McCall &amp; 5 más.</span>
-                                </li>
-                                <li class="w3-padding-16">
-                                    <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
-                                    <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                    <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
-                                    <br>
-                                    <span>Visto por: Allison Argent, Liam Dunbar, Scott McCall &amp; 3 más.</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
+            <!--Modal shares-->
+            <div id="id05" class="w3-modal" style="z-index:4">
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-padding w3-blue">
+                        <span onclick="document.getElementById('id05').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+                        <h2>All Views</h2>
+                    </div>
+                    <br>
+                    <div class="w3-container">
+                        <form class="w3-container">
+                            <div class="w3-row-padding w3-margin-bottom">
+                                <p>
+                                    <input type="text" id="search03" name="search" placeholder="Search..">
+                                </p>
+                                <ul class="w3-ul w3-card-4">
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Conexión WiFi</span>
+                                        <br>
+                                        <span>Visto por: Isaac Lahey, Liam Dunbar, Allison Argent &amp; 2 más.</span>
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/water1.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Tubería rota</span>
+                                        <br>
+                                        <span>Visto por: Stili Stillinski, Allison Argent, Isaac Lahey &amp; 6 más.</span>
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/el_icon_4.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Bombillo quemado</span>
+                                        <br>
+                                        <span>Visto por: Stili Stillinski, Liam Dunbar, Scott McCall &amp; 5 más.</span>
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+                                        <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                                        <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
+                                        <br>
+                                        <span>Visto por: Allison Argent, Liam Dunbar, Scott McCall &amp; 3 más.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Footer -->
-        <footer class="w3-container w3-padding-16 w3-light-grey">
-            <!--
-            <h4>FOOTER</h4>
-            <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            <!-- Footer -->
+            <footer class="w3-container w3-padding-16 w3-light-grey">
+                <!--
+<h4>FOOTER</h4>
+<p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 -->
-        </footer>
+            </footer>
 
-        <!-- End page content -->
-    </div>
+            <!-- End page content -->
+        </div>
 
-    <script>
-        var openInbox = document.getElementById("myBtn");
-        openInbox.click();
+        <script>
+            var openInbox = document.getElementById("myBtn");
+            openInbox.click();
 
-        function w3_open() {
-            document.getElementById("mySidenav").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidenav").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        function myFunc(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-                x.previousElementSibling.className += " w3-red";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-                x.previousElementSibling.className =
-                    x.previousElementSibling.className.replace(" w3-red", "");
+            function w3_open() {
+                document.getElementById("mySidenav").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
             }
-        }
 
-        openMail("Borge")
-
-        function openMail(personName) {
-            var i;
-            var x = document.getElementsByClassName("person");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            function w3_close() {
+                document.getElementById("mySidenav").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
             }
-            x = document.getElementsByClassName("test");
-            for (i = 0; i < x.length; i++) {
-                x[i].className = x[i].className.replace(" w3-light-grey", "");
+
+            function myFunc(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    x.previousElementSibling.className += " w3-red";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                    x.previousElementSibling.className =
+                        x.previousElementSibling.className.replace(" w3-red", "");
+                }
             }
-            document.getElementById(personName).style.display = "block";
-            event.currentTarget.className += " w3-light-grey";
-        }
 
-    </script>
+            openMail("Borge")
 
-    <script>
-        // Get the Sidenav
-        var mySidenav = document.getElementById("mySidenav");
+            function openMail(personName) {
+                var i;
+                var x = document.getElementsByClassName("person");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x = document.getElementsByClassName("test");
+                for (i = 0; i < x.length; i++) {
+                    x[i].className = x[i].className.replace(" w3-light-grey", "");
+                }
+                document.getElementById(personName).style.display = "block";
+                event.currentTarget.className += " w3-light-grey";
+            }
 
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
+        </script>
 
-        // Toggle between showing and hiding the sidenav, and add overlay effect
-        function w3_open() {
-            if (mySidenav.style.display === 'block') {
-                mySidenav.style.display = 'none';
+        <script>
+            // Get the Sidenav
+            var mySidenav = document.getElementById("mySidenav");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidenav, and add overlay effect
+            function w3_open() {
+                if (mySidenav.style.display === 'block') {
+                    mySidenav.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidenav.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidenav with the close button
+            function w3_close() {
+                mySidenav.style.display = "none";
                 overlayBg.style.display = "none";
-            } else {
-                mySidenav.style.display = 'block';
-                overlayBg.style.display = "block";
             }
-        }
 
-        // Close the sidenav with the close button
-        function w3_close() {
-            mySidenav.style.display = "none";
-            overlayBg.style.display = "none";
-        }
+        </script>
 
-    </script>
-
-</body>
+    </body>
 
 </html>

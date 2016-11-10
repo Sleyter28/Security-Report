@@ -1,227 +1,324 @@
 <!DOCTYPE html>
 <html>
-<title>Security Report</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <title>Security Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="icon" href="images/cctv_camera-512.ico">
+    <style>
+        .city {
+            display: none;
+        }
+
+    </style>
 
 
-<body class="w3-light-grey">
 
-    <!-- Top container -->
-    <div class="w3-container w3-top w3-black w3-large w3-padding w3-border-top w3-border-black" style="z-index:4">
-        <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-        <span class="w3-right"><img src="/images/cctv_camera-512.png"  style="width:35px"></span>
-    </div>
+    <body class="w3-light-grey">
 
-    <!-- Sidenav/menu -->
-
-    <nav class="w3-sidenav w3-collapse w3-vivid-blue w3-theme-l4 w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
-        <br>
-        <div class="w3-container w3-row">
-            <div class="w3-col s4">
-                <img src="/images/img_avatar2%20(1).png" class="w3-circle w3-margin-right" style="width:56px">
-            </div>
-            <div class="w3-col s8">
-                <span>Welcome, <strong>Theo</strong></span>
-                <br>
-                <a href="#" class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i class="fa fa-envelope"></i></a>
-                <a href="#" class="w3-hover-none w3-hover-text-green w3-show-inline-block"><i class="fa fa-user"></i></a>
-                <a href="#" class="w3-hover-none w3-hover-text-blue w3-show-inline-block"><i class="fa fa-cog"></i></a>
-            </div>
-        </div>
-        <hr>
-        <div class="w3-container" w3-border-right w3-border-black>
-            <h5>Dashboard</h5>
-        </div>
-        <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-        <a href="Security_Report.html" class="w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
-        <a href="History.html" class="w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-        <a href="Settings.html" class="w3-padding w3-pale-blue"><i class="fa fa-cog fa-fw"></i>  Settings</a>
-        <br>
-        <br>
-    </nav>
-
-
-    <!-- Overlay effect when opening sidenav on small screens -->
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
-
-        <!-- Header -->
-        <header class="w3-container" style="padding-top:22px">
-            <h5><b><i class="fa fa-cog"></i> Settings</b></h5>
-        </header>
-
-        <div class="w3-row-padding w3-margin-bottom">
-            <div class="w3-container">
-                <div class="w3-row">
-                    <a href="javascript:void(0)" onclick="openCity(event, 'London');">
-                        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">General</div>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
-                        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Security</div>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
-                        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Notifications</div>
-                    </a>
-                </div>
-
-                <div id="London" class="w3-container city">
-                    <h2>General</h2>
-                    <div class="w3-row">
-                        <div class="w3-col s3">
-                            <img src="/images/img_avatar2%20(1).png" class="w3-square w3-margin-right" style="width:200px">
-                        </div>
-                        <div class="w3-col s9">
-                            <label>Name: </label>
-                            <input type="text" value="Theo Raeken" id="fullName" disabled style="width:150px;height:35px;">
-                            <br>
-                            <br>
-                            <label>E-mail:</label>
-                            <input type="email" value="traeken@mtv.com" id="fullName" disabled style="width:150px;height:35px;">
-                            <br>
-                            <br>
-                            <label>Phone: </label>
-                            <input type="text" value="555-9839" id="fullName" disabled style="width:150px;height:35px;">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="w3-row">
-                        <div class="w3-col s12">
-                            <br>
-                            <input type="button" value="Save" class="w3-btn w3-blue" style="margin-left:250px;">
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="Paris" class="w3-container city">
-                    <h2>Security</h2>
-                    <div class="w3-row">
-                        <div class="w3-col s3">
-                            <img src="/images/img_avatar2%20(1).png" class="w3-square w3-margin-right" style="width:200px">
-                        </div>
-                        <div class="w3-col s9">
-                            <label>Name: </label>
-                            <input type="text" value="Theo Raeken" id="fullName" disabled style="width:150px;height:35px;">
-                            <br>
-                            <br>
-                            <h5>Change Password</h5>
-                            <label>New  :</label>
-                            <input type="password" id="fullName" style="width:150px;height:35px;">
-                            <br>
-                            <br>
-                            <label>Repeat: </label>
-                            <input type="password" id="fullName" style="width:150px;height:35px;">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="w3-row">
-                        <div class="w3-col s12">
-                            <br>
-                            <input type="button" value="Save" class="w3-btn w3-blue" style="margin-left:250px;">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="Tokyo" class="w3-container city">
-                    <h2>Notifications</h2>
-                    <div class="w3-row">
-                        <div class="w3-col s3">
-                            <img src="/images/img_avatar2%20(1).png" class="w3-square w3-margin-right" style="width:200px">
-                        </div>
-                        <div class="w3-col s9">
-                            <label>Name: </label>
-                            <input type="text" value="Theo Raeken" id="fullName" disabled style="width:150px;height:35px;">
-                            <br>
-                            <br>
-                            <h5>Notification</h5>
-                            <p>
-                                <input class="w3-radio" type="radio" name="gender" value="alto" checked>
-                                <label class="w3-validate">Enable</label>
-                            </p>
-                            <p>
-                                <input class="w3-radio" type="radio" name="gender" value="medio">
-                                <label class="w3-validate">Disable</label>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w3-row">
-                        <div class="w3-col s12">
-                            <br>
-                            <input type="button" value="Save" class="w3-btn w3-blue" style="margin-left:250px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Top container -->
+        <div class="w3-container w3-top w3-vivid-purplish-blue w3-large w3-padding w3-border-top w3-border-black" style="z-index:4">
+            <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+            <span class="w3-right"><img src="/images/cctv_camera-512.png"  style="width:35px"></span>
         </div>
 
-        <hr>
-        <br>
+        <!-- Sidenav/menu -->
+
+        <nav class="w3-sidenav w3-collapse w3-vivid-blue w3-theme-l4 w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
+            <br>
+            <div class="w3-container w3-row">
+                <div class="w3-col s4">
+                    <img src="/images/img_avatar2%20(1).png" class="w3-circle w3-margin-right" style="width:56px">
+                </div>
+                <div class="w3-col s8">
+                    <span>Welcome, <strong>Theo</strong></span>
+                    <br>
+                    <a href="#" class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i class="fa fa-envelope"></i></a>
+                    <a href="#" class="w3-hover-none w3-hover-text-green w3-show-inline-block"><i class="fa fa-user"></i></a>
+                    <a href="#" class="w3-hover-none w3-hover-text-blue w3-show-inline-block"><i class="fa fa-cog"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-container" w3-border-right w3-border-black>
+                <h5>Dashboard</h5>
+            </div>
+            <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <a href="Security_Report.html" class="w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
+            <a href="History.html" class="w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+            <a href="Settings.html" class="w3-padding w3-pale-blue"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+            <br>
+            <br>
+        </nav>
 
 
+        <!-- Overlay effect when opening sidenav on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-        <!-- Footer -->
-        <footer class="w3-container w3-padding-16 w3-light-grey">
-            <!--
-            <h4>FOOTER</h4>
-            <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+            <!-- Header -->
+            <header class="w3-container" style="padding-top:22px">
+                <h5><b><i class="fa fa-cog"></i> Settings</b></h5>
+            </header>
+
+            <div class="w3-row-padding w3-margin-bottom">
+                <div class="w3-container">
+                    <div class="w3-row">
+                        <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+                            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">General</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+                            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Services</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+                            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Notifications</div>
+                        </a>
+                    </div>
+
+                    <div id="London" class="w3-container city">
+                        <h2>General</h2>
+                        <div class="w3-row">
+                            <div class="w3-col s3">
+                                <img src="/images/img_avatar2%20(1).png" class="w3-square w3-margin-right" style="width:200px">
+                            </div>
+                            <div class="w3-col s4">
+                                <div class="w3-col s4">
+                                    <label>ID: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="123449583" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>Name: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="Theo Raeken" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>E-mail:</label>
+                                </div>
+                                <div class="w3-col s3">
+                                    <input type="email" value="traeken@mtv.com" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>Phone: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="555-9839" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>Nº Subscription: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="309483" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="w3-col s5">
+                                <div class="w3-col s4">
+                                    <label>Ubication: </label>
+                                </div>
+                                <div class="w3-col s6">
+                                    <input type="text" value="9.983901" id="fullName" disabled style="width:125px;height:35px;">
+                                    <input type="text" value="-84.718394" id="fullName" disabled style="width:125px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>Address: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="Cartago, 3ª Avenue, Street 10" id="fullName" disabled style="width:250px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>Emergency Phone: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="555-0920" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>Access Type: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="Apartment" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="w3-col s4">
+                                    <label>Arrearage: </label>
+                                </div>
+                                <div class="w3-col s4">
+                                    <input type="text" value="No arrearage" id="fullName" disabled style="width:150px;height:35px;">
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-col s12">
+                                <br>
+                                <input type="button" value="Save" class="w3-btn w3-blue" style="margin-left:550px;">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="Paris" class="w3-container city">
+                        <h2>Services</h2>
+                        <div class="w3-row">
+
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-container w3-section">
+                                <table class="w3-table-all">
+                                    <thead>
+                                        <tr class="w3-blue">
+                                            <th>ID</th>
+                                            <th>Instalation Date</th>
+                                            <th>State</th>
+                                            <th>Type of house</th>
+                                            <th>Floor</th>
+                                        </tr>
+                                    </thead>
+                                    <tr class="w3-hover-black">
+                                        <td>CTD-012</td>
+                                        <td>04/11/2016</td>
+                                        <td>Update</td>
+                                        <td>Apartment</td>
+                                        <td>3º</td>
+                                    </tr>
+                                    <tr class="w3-hover-black">
+                                        <td>INT-104</td>
+                                        <td>02/11/2016</td>
+                                        <td>Update</td>
+                                        <td>Apartment</td>
+                                        <td>3º</td>
+                                    </tr>
+                                    <tr class="w3-hover-black">
+                                        <td>SCB-035</td>
+                                        <td>06/11/2016</td>
+                                        <td>Completed</td>
+                                        <td>Apartment</td>
+                                        <td>3º</td>
+                                    </tr>
+                                    <tr class="w3-hover-black">
+                                        <td>SCB-011</td>
+                                        <td>04/11/2016</td>
+                                        <td>Finish</td>
+                                        <td>Apartment</td>
+                                        <td>3º</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Tokyo" class="w3-container city">
+                        <h2>Notifications</h2>
+                        <div class="w3-row">
+                            <div class="w3-col s3">
+                                <img src="/images/img_avatar2%20(1).png" class="w3-square w3-margin-right" style="width:200px">
+                            </div>
+                            <div class="w3-col s9">
+                                <label>Name: </label>
+                                <input type="text" value="Theo Raeken" id="fullName" disabled style="width:150px;height:35px;">
+                                <br>
+                                <br>
+                                <h5>Notification</h5>
+                                <p>
+                                    <input class="w3-radio" type="radio" name="gender" value="alto" checked>
+                                    <label class="w3-validate">Enable</label>
+                                </p>
+                                <p>
+                                    <input class="w3-radio" type="radio" name="gender" value="medio">
+                                    <label class="w3-validate">Disable</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-col s12">
+                                <br>
+                                <input type="button" value="Save" class="w3-btn w3-blue" style="margin-left:250px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <br>
+
+            <!-- Footer -->
+            <footer class="w3-container w3-padding-16 w3-light-grey">
+                <!--
+<h4>FOOTER</h4>
+<p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 -->
-        </footer>
+            </footer>
 
-        <!-- End page content -->
-    </div>
+            <!-- End page content -->
+        </div>
 
-    <script>
-        // Get the Sidenav
-        var mySidenav = document.getElementById("mySidenav");
+        <script>
+            // Get the Sidenav
+            var mySidenav = document.getElementById("mySidenav");
 
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
 
-        // Toggle between showing and hiding the sidenav, and add overlay effect
-        function w3_open() {
-            if (mySidenav.style.display === 'block') {
-                mySidenav.style.display = 'none';
+            // Toggle between showing and hiding the sidenav, and add overlay effect
+            function w3_open() {
+                if (mySidenav.style.display === 'block') {
+                    mySidenav.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidenav.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidenav with the close button
+            function w3_close() {
+                mySidenav.style.display = "none";
                 overlayBg.style.display = "none";
-            } else {
-                mySidenav.style.display = 'block';
-                overlayBg.style.display = "block";
             }
-        }
 
-        // Close the sidenav with the close button
-        function w3_close() {
-            mySidenav.style.display = "none";
-            overlayBg.style.display = "none";
-        }
-
-    </script>
-    <script>
-        function openCity(evt, cityName) {
-            var i, x, tablinks;
-            x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+        </script>
+        <script>
+            function openCity(evt, cityName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("city");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += " w3-border-blue";
             }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < x.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.firstElementChild.className += " w3-border-red";
-        }
 
-    </script>
+        </script>
 
-</body>
+    </body>
 
 </html>
