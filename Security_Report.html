@@ -7,26 +7,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="icon" href="images/cctv_camera-512.ico">
 
-    <body class="w3-light-grey">
+    <style>
+		.w3-allerta {
+  			font-family: "Allerta Stencil", Sans-serif;
+		}
+		.w3-myfont {
+    		font-family: "Comic Sans MS", cursive, sans-serif;
+		}
+		.w3-lobster {
+    		font-family: "Lobster", serif;
+		}
+	</style>
+
+    <body class="w3-pale-blue">
 
         <!-- Top container -->
         <div class="w3-container w3-top w3-vivid-purplish-blue w3-large w3-padding w3-border-top w3-border-black" style="z-index:4">
-            <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-            <span class="w3-right"><img src="/images/cctv_camera-512.png"  style="width:35px"></span>
+            <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i> Menu</button>
+            <span class="w3-right"><img src="images/cctv_camera-512.png"  style="width:35px"></span>
         </div>
 
         <!-- Sidenav/menu -->
 
         <nav class="w3-sidenav w3-collapse w3-vivid-blue w3-theme-l4 w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
+            <hr>
             <br>
             <div class="w3-container w3-row">
                 <div class="w3-col s4">
-                    <img src="/images/img_avatar2%20(1).png" class="w3-circle w3-margin-right" style="width:56px">
+                    <img src="images/img_avatar2%20(1).png" class="w3-circle w3-margin-right" style="width:56px">
                 </div>
-                <div class="w3-col s8">
-                    <span>Welcome, <strong>Theo</strong></span>
+                <div class="w3-col s8 w3-allerta">
+                    <span class="w3-xxlarge" >Welcome, <strong>Theo!</strong></span>
                     <br>
                     <a href="#" class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i class="fa fa-envelope"></i></a>
                     <a href="#" class="w3-hover-none w3-hover-text-green w3-show-inline-block"><i class="fa fa-user"></i></a>
@@ -34,13 +48,13 @@
                 </div>
             </div>
             <hr>
-            <div class="w3-container" w3-border-right w3-border-black>
-                <h5>Dashboard</h5>
+            <div class="w3-container w3-border-0">
+                <h5 class="w3-xlarge w3-lobster ">Dashboard</h5>
             </div>
-            <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-            <a href="Security_Report.html" class="w3-padding w3-pale-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
-            <a href="History.html" class="w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-            <a href="Settings.html" class="w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+            <a href="Security_Report.html" class="w3-padding  w3-pale-blue w3-myfont w3-large w3-opacity"><i class="fa fa-users fa-fw"></i><b> Overview</b></a>
+            <a href="History.html" class="w3-padding  w3-myfont w3-large w3-opacity"><i class="fa fa-history fa-fw"></i><b> History</b></a>
+            <a href="Settings.html" class="w3-padding w3-myfont w3-large w3-opacity"><i class="fa fa-cog fa-fw"></i><b> Settings</b></a>
+            <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black w3-myfont w3-large w3-opacity" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i><b> Close Menu</b></a>
             <br>
             <br>
         </nav>
@@ -50,18 +64,19 @@
         <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
         <!-- !PAGE CONTENT! -->
-        <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+        <hr>
+        <div class="w3-main w3-pale-blue" style="margin-left:300px;margin-top:43px;">
 
             <!-- Header -->
             <header class="w3-container" style="padding-top:22px">
-                <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+                <h5 class="w3-lobster w3-xxlarge"><b><i class="fa fa-dashboard "></i> My Dashboard</b></h5>
             </header>
 
-            <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-row-padding w3-margin-bottom ">
 
                 <div class="w3-quarter">
                     <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='block'">
-                        <div class="w3-container w3-red w3-padding-16">
+                        <div class="w3-container w3-red w3-padding-16 w3-round-xlarge">
                             <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
                             <div class="w3-right">
                                 <h3>52</h3>
@@ -74,12 +89,12 @@
 
                 <div class="w3-quarter">
                     <a href="javascript:void(0)" onclick="document.getElementById('id05').style.display='block'">
-                        <div class="w3-container w3-blue w3-padding-16">
+                        <div class="w3-container w3-blue w3-padding-16 w3-round-xlarge">
                             <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
                             <div class="w3-right">
                                 <h3>99</h3>
                             </div>
-                            <div class="w3-clear"></div>
+                            <div class="w3-clear "></div>
                             <h4>Views</h4>
                         </div>
                     </a>
@@ -87,7 +102,7 @@
 
                 <div class="w3-quarter">
                     <a href="javascript:void(0)" onclick="document.getElementById('id04').style.display='block'">
-                        <div class="w3-container w3-green w3-padding-16">
+                        <div class="w3-container w3-green w3-padding-16 w3-round-xlarge">
                             <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
                             <div class="w3-right">
                                 <h3>23</h3>
@@ -100,7 +115,7 @@
 
                 <div class="w3-quarter">
                     <a href="javascript:void(0)" onclick="document.getElementById('id03').style.display='block'">
-                        <div class="w3-container w3-amber w3-text-white w3-padding-16">
+                        <div class="w3-container w3-amber w3-text-white w3-padding-16 w3-round-xlarge">
                             <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
                             <div class="w3-right">
                                 <h3>50</h3>
@@ -112,11 +127,11 @@
                 </div>
 
             </div>
-
+            <hr>
             <div class="w3-container w3-section">
                 <div class="w3-row-padding" style="margin-left:20px">
-                    <div class="w3-thirdthird">
-                        <h5>News</h5>
+                    <div class="w3-thirdthird ">
+                        <h5 class="w3-myfont w3-large w3-bottombar w3-border-vivid-purplish-blue"><b>News</b></h5>
                         <table class="w3-table w3-striped w3-white">
                             <tr>
                                 <td><i class="fa fa-camera w3-blue w3-padding-tiny"></i></td>
@@ -198,13 +213,13 @@
                             <div class="w3-row-padding w3-margin-bottom">
                                 <p>
                                     <input type="text" id="search01" name="search" placeholder="Search..">
-                                    <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='block'" style="margin-top:5px;">New  <i class="fa fa-plus-square"></i></a>
+                                    <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='block'" style="margin-top:5px;">New <i class="fa fa-plus-square"></i></a>
                                 </p>
                                 <ul class="w3-ul w3-card-4">
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Conexión WiFi</span>
+                                        <span class="w3-xlarge">Averia: Conexion WiFi</span>
                                         <br>
                                         <span>Fecha: 04/11/2016</span>
                                         <span>Hora: 2 pm</span>
@@ -229,7 +244,7 @@
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/water1.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Servidor Caido</span>
+                                        <span class="w3-xlarge">Averia: Servidor Caido</span>
                                         <br>
                                         <span>Fecha: 01/11/2016</span>
                                         <span>Hora: 11 pm</span>
@@ -244,7 +259,7 @@
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/el_icon_4.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Camaras Dañadas</span>
+                                        <span class="w3-xlarge">Averia: Camaras Danadas</span>
                                         <br>
                                         <span>Fecha: 03/11/2016</span>
                                         <span>Hora: 5 pm</span>
@@ -259,7 +274,7 @@
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Sin Canales</span>
+                                        <span class="w3-xlarge">Averia: Sin Canales</span>
                                         <br>
                                         <span>Fecha: 06/11/2016</span>
                                         <span>Hora: 8 am</span>
@@ -288,7 +303,7 @@
                     <div class="w3-container">
                         <form class="w3-container">
                             <p>
-                                <label>Tipo de Avería</label>
+                                <label>Tipo de Averia</label>
                                 <select class="w3-select w3-border-red">
                                     <option value="volvo">Seguridad</option>
                                     <option value="saab">Cable Digital</option>
@@ -315,7 +330,7 @@
                             	<input class="w3-input w3-border w3-hover-border-black" style="height:200px" placeholder="Descripcion del problema...">
                             </p>
                             <p>
-                                <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='none'">Add  <i class="fa fa-paper-plane"></i></a>
+                                <a class="w3-btn w3-right w3-red" onclick="document.getElementById('id02').style.display='none'">Add <i class="fa fa-paper-plane"></i></a>
                             </p>
                             <br>
                             <br>
@@ -393,14 +408,14 @@
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Conexión WiFi</span>
+                                        <span class="w3-xlarge">Averia: Conexion WiFi</span>
                                         <br>
                                         <span>Compartido con: Allison Argent &amp; Scott McCall</span>
                                     </li>
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
+                                        <span class="w3-xlarge">Averia: Recorte de ramas de arboles</span>
                                         <br>
                                         <span>Compartido con: Liam Dunbar &amp; Stile Stillisnki</span>
                                     </li>
@@ -429,30 +444,30 @@
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/telecommunication.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Conexión WiFi</span>
+                                        <span class="w3-xlarge">Averia: Conexion WiFi</span>
                                         <br>
-                                        <span>Visto por: Isaac Lahey, Liam Dunbar, Allison Argent &amp; 2 más.</span>
+                                        <span>Visto por: Isaac Lahey, Liam Dunbar, Allison Argent &amp; 2 mas.</span>
                                     </li>
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/water1.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Tubería rota</span>
+                                        <span class="w3-xlarge">Averia: Tuberia rota</span>
                                         <br>
-                                        <span>Visto por: Stili Stillinski, Allison Argent, Isaac Lahey &amp; 6 más.</span>
+                                        <span>Visto por: Stili Stillinski, Allison Argent, Isaac Lahey &amp; 6 mas.</span>
                                     </li>
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/el_icon_4.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Bombillo quemado</span>
+                                        <span class="w3-xlarge">Averia: Bombillo quemado</span>
                                         <br>
-                                        <span>Visto por: Stili Stillinski, Liam Dunbar, Scott McCall &amp; 5 más.</span>
+                                        <span>Visto por: Stili Stillinski, Liam Dunbar, Scott McCall &amp; 5 mas.</span>
                                     </li>
                                     <li class="w3-padding-16">
                                         <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
                                         <img src="images/env-a-materials-icon-a.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                        <span class="w3-xlarge">Avería: Recorte de ramas de árboles</span>
+                                        <span class="w3-xlarge">Averia: Recorte de ramas de arboles</span>
                                         <br>
-                                        <span>Visto por: Allison Argent, Liam Dunbar, Scott McCall &amp; 3 más.</span>
+                                        <span>Visto por: Allison Argent, Liam Dunbar, Scott McCall &amp; 3 mas.</span>
                                     </li>
                                 </ul>
                             </div>
