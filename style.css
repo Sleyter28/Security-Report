@@ -7,6 +7,9 @@ html,
     h5 {
         font-family: "Raleway", sans-serif
     }
+body{
+    background-image: url(images/baby-blue-paper-texture.jpg);
+}
 
 nav{
     border: 1px, black;
